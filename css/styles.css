@@ -113,20 +113,22 @@ legend {
     }
     
     label {
-        padding: 0.75em;
+        padding: 0.75em 0.75em 0.75em 0;
     }
     
     input,
     select,
     textarea {
-        border: none;
+        border: 1px solid #e8e8e8;
         background-color: #e8e8e8;
         padding: 0.75em;
     
     }
 
-    input:focus {
-        border: 3px solid #6082b6;
+    input:focus,
+    select:focus,
+    textarea:focus {
+        outline: 3px solid #767fe8;
     }
 
     #zipcode {
@@ -148,6 +150,10 @@ legend {
         flex-direction: row;
         width: 200px;
         margin-left: 20px;
+    }
+
+    .check-radio-label {
+        padding-left: 0.75em;
     }
 
     .disabled {
