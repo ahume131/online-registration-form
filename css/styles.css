@@ -149,6 +149,10 @@ legend {
         margin-left: 1em;
     }
 
+    .disabled {
+        color: darkgray;
+    }
+
     .btn {
         padding: 1em;
         border: none;
