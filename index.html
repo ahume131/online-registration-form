@@ -39,7 +39,7 @@
 
                     <label for="">State</label>
                     <select id="state" name="user_state" class="rounded">
-                            <option value="choose-state" selected="selected" disabled="disabled" class="disabled">Choose State</option>
+                            <option value="choose-state" selected="selected" disabled>Choose State</option>
                             <option value="alabama">Alabama</option>
                             <option value="alaska">Alaska</option>
                             <option value="arizona">Arizona</option>
@@ -100,13 +100,13 @@
                 <fieldset id="newsletter">
                 <legend>Newsletter</legend>    
                     <label>Select the newsletters you would like to receive</label><br>
-                    <input type="checkbox" id="html" value="html_news" name="user_newsletters"><label for="html">HTML News</label><br>
-                    <input type="checkbox" id="css" value="css_news" name="user_newsletters"><label for="css">CSS News</label><br>
-                    <input type="checkbox" id="js" value="js_news" name="user_newsletters"><label for="js">Javascript News</label><br>
+                    <div class="checkbox-radios"><input type="checkbox" id="html" value="html_news" name="user_newsletters"><label for="html">HTML News</label></div><br>
+                    <div class="checkbox-radios"><input type="checkbox" id="css" value="css_news" name="user_newsletters"><label for="css">CSS News</label></div><br>
+                    <div class="checkbox-radios"><input type="checkbox" id="js" value="js_news" name="user_newsletters"><label for="js">Javascript News</label></div><br>
 
                     <label>Newsletter format</label><br>
-                    <input type="radio" id="html-format" value="html" name="user_format"><label for="html-format">HTML</label><br>
-                    <input type="radio" id="plain-text-format" value="plain-text" name="user_format"><label for="plain-text-format">Plain text</label><br>
+                    <div class="checkbox-radios"><input type="radio" id="html-format" value="html" name="user_format"><label for="html-format">HTML</label></div><br>
+                    <div class="checkbox-radios"><input type="radio" id="plain-text-format" value="plain-text" name="user_format"><label for="plain-text-format">Plain text</label></div><br>
 
                     <label for="topics">Other topics you'd like to hear about</label><br>
                     <textarea id="topics" name="user_topics" class="rounded"></textarea>

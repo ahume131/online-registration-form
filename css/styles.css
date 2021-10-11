@@ -4,6 +4,7 @@
 
 * {
     box-sizing: border-box;
+    color: #707070;
 }
 
 body {
@@ -41,7 +42,8 @@ legend {
     #container {
         display: flex;
         flex-direction: column;
-        max-width: 320px;
+        width: 99%;
+        max-width: 800px;
         margin: 0 auto;
         padding-left: 0.75em;
         padding-right: 0.75em;
@@ -111,9 +113,7 @@ legend {
     }
     
     label {
-        color: #707070;
-        padding-top: 0.75em;
-        padding-bottom: 0.75em;
+        padding: 0.75em;
     }
     
     input,
@@ -125,8 +125,8 @@ legend {
     
     }
 
-    option:disabled {
-        color: gray;
+    input:focus {
+        border: 3px solid #6082b6;
     }
 
     #zipcode {
@@ -144,9 +144,10 @@ legend {
         text-align: right;
     }
 
-    input[type="checkbox"],
-    input[type="radio"] {
-        margin-left: 1em;
+    .checkbox-radios {
+        flex-direction: row;
+        width: 200px;
+        margin-left: 20px;
     }
 
     .disabled {
@@ -156,7 +157,7 @@ legend {
     .btn {
         padding: 1em;
         border: none;
-        background: #0096ff;
+        background: #40b5ad;
         color: white;
         font-weight: bold;
     }
