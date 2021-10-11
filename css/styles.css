@@ -1,3 +1,23 @@
 body {
     font-family: 'Merriweather', serif;
 }
+
+.container {
+    max-width: 320px;
+}
+
+h1 {
+    background-color: #191970;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #b6d0e2;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
