@@ -1,23 +1,166 @@
+/* ===========================================
+     Base Element Styles
+   =========================================== */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Merriweather', serif;
 }
 
-.container {
-    max-width: 320px;
-}
-
 h1 {
-    background-color: #191970;
+    background-color: #212f3c;
     color: white;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 1em;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    background-color: #b6d0e2;
+header {
+    text-align: center;
 }
 
-fieldset {
-    display: flex;
-    flex-direction: column;
+h2,
+legend {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color:  #212f3c;
 }
+
+ /* ==========================================
+     Base Layout Styles 
+    ========================================== */
+    
+    /* ---- Layout Containers ---- */
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+        margin: 0 auto;
+        padding-left: 0.75em;
+        padding-right: 0.75em;
+    }
+  
+    /* ---- Page Elements ---- */
+
+    #intro {
+        text-align: center;
+    }
+    
+    #intro-text {
+        text-align: center;
+        font-size: 1em;
+        margin-bottom: 0.25em;
+        padding-bottom: 2em;
+        border-bottom: 3px solid #212f3c;
+    }
+
+    #intro-text,
+    #copyright {
+        text-align: center;
+        color: gray;
+    }
+
+    #copyright {
+        font-weight: lighter;
+        font-size: 0.75em;
+        font-style: italic;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        padding: 1em;
+    }
+
+ /* ==========================================
+     Form Styles 
+    ========================================== */
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    fieldset input:last-child {
+        margin-bottom: 2em;
+    }
+
+    fieldset textarea {
+        margin-bottom: 2em;
+    }
+    
+    legend{
+        padding-top: 1em;
+        padding-bottom: 1em;
+        width: 100%;
+        border-top: 2px solid  #212f3c;
+    }
+    
+    label {
+        color: #707070;
+        padding-top: 0.75em;
+        padding-bottom: 0.75em;
+    }
+    
+    input,
+    select,
+    textarea {
+        border: none;
+        background-color: #e8e8e8;
+        padding: 0.75em;
+    
+    }
+
+    option:disabled {
+        color: gray;
+    }
+
+    #zipcode {
+        max-width: 50%;
+    }
+
+    #topics {
+        height: 5em;
+    }
+
+    input::placeholder {
+        font-style: italic;
+        color: darkgray;
+        font-size: 0.75em;
+        text-align: right;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        margin-left: 1em;
+    }
+
+    .btn {
+        padding: 1em;
+        border: none;
+        background: #0096ff;
+        color: white;
+        font-weight: bold;
+    }
+
+    .rounded {
+        border-radius: 5px;
+    }
+
+ /* =========================================
+    Media Queries
+    ========================================= */   
