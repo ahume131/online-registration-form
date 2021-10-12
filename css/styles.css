@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-    background-color: #212f3c;
+    background-color: #40b5ad;
     color: white;
     text-transform: uppercase;
     font-size: 1.5em;
@@ -31,6 +31,11 @@ legend {
     font-size: 1.25rem;
     font-weight: bold;
     color:  #212f3c;
+}
+
+footer {
+    background: #e8e8e8;
+    margin-bottom: -20px;
 }
 
  /* ==========================================
@@ -97,12 +102,9 @@ legend {
         padding: 0px;
     }
 
-    fieldset input:last-child {
-        margin-bottom: 2em;
-    }
-
-    fieldset textarea {
-        margin-bottom: 2em;
+    #zipcode,
+    #topics {
+        margin-bottom: 1.25em;
     }
     
     legend{
@@ -129,6 +131,15 @@ legend {
     select:focus,
     textarea:focus {
         outline: 3px solid #767fe8;
+        background-color: white;
+        transition-property: background-color;
+        transition-duration: 4s;
+        transition-delay: 0s;
+    }
+
+    .contact-inputs {
+        display: flex;
+        flex-direction: column;
     }
 
     #zipcode {
@@ -139,7 +150,8 @@ legend {
         height: 5em;
     }
 
-    input::placeholder {
+    input::placeholder,
+    textarea::placeholder {
         font-style: italic;
         color: darkgray;
         font-size: 0.75em;
@@ -175,3 +187,47 @@ legend {
  /* =========================================
     Media Queries
     ========================================= */   
+
+    @media screen and (min-width: 768px) {
+        #container {
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+
+        form {
+            margin: 0;
+        }
+
+        input,
+        select,
+        textarea {
+            margin-bottom: 1em;
+        }
+        
+        .contact-inputs {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-grow: 2;
+        }
+
+        .contact-inputs input,
+        .contact-inputs select {
+            width: 75%;
+        }
+
+        #zipcode {
+            max-width: 25%;
+        }
+
+        #copyright {
+            margin-top: 3em;
+        }
+
+
+    }
